@@ -3,13 +3,13 @@
 ##################### API Observation Via CURL
 
 # A. Get All Students
-curl -X GET "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/studentsapi/students"
+curl -X GET "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/students"
 
 # B. Get One Student
-curl -X GET "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev//api/students/1"
+curl -X GET "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/students/1"
 
 # C. Create Student
-curl -X POST "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev//api/students" \
+curl -X POST "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/students" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Johnson",
@@ -19,7 +19,7 @@ curl -X POST "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev//api/s
   }'
 
 # D. Update Student
-curl -X PUT "http://localhost:8000/api/students/1" \
+curl -X PUT "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/students/1" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Updated",
@@ -29,7 +29,7 @@ curl -X PUT "http://localhost:8000/api/students/1" \
   }'
 
 # E. Delete Student
-curl -X DELETE "http://localhost:8000/api/students/1"
+curl -X DELETE "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev//api/students/1"
 
 
 ##################### DB Observation Via SQLite Web
