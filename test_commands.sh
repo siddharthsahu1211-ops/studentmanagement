@@ -13,9 +13,9 @@ curl -X POST "https://urban-broccoli-p7p7wjq5v7qhr96v-8000.app.github.dev/api/st
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Johnson",
-    "email": "alice@example.com",
-    "course": "Computer Science",
-    "year": 2
+    "email": "aloic@example.com",
+    "course": "Computer ",
+    "year": 44
   }'
 
 # D. Update Student
