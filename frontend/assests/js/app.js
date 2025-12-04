@@ -1,7 +1,10 @@
-import{initstudentcontroller}from".?controlllerrs/studentcontroller.js";
-import{router} from"./router/viewrouter.js";
 
-window.addEventListener('DOMContentLoaded",() =>{
-    router():
-initstudentcontroller();
-});}
+// Main entrypoint for frontend
+import { initStudentController } from "./controllers/studentController.js";
+import { router } from "./router/viewRouter.js";
+
+// Initialize app on page load
+window.addEventListener("DOMContentLoaded", () => {
+  router();
+  initStudentController();
+});
