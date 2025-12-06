@@ -1,10 +1,10 @@
-from http.server import ThreadingHTTPServer
+from http.server import HTTPServer
 from router import StudentRouter
 from database.connection import init_database
 
 def run_server():
     init_database()
-    server = ThreadingHTTPServer(("", 8000), StudentRouter)
+    server = HTTPServer(("", 8000), StudentRouter)
     print("🚀 Server running at http://localhost:8000")
     server.serve_forever()
 

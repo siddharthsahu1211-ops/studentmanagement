@@ -1,4 +1,4 @@
-// import { initStudentController } from "../controllers/studentController.js";
+import { initStudentController } from "../controllers/studentController.js";
 
 // Load a view into #app container
 async function loadView(path) {
