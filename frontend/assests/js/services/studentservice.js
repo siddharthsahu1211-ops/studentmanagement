@@ -17,21 +17,21 @@ export async function apiGetAll() {
   return safeJson(res);
 }
 
-// // Fetch one student by ID
-// export async function apiGetOne(id) {
-//   const res = await fetch(`${API_URL}/${id}`);
-//   if (!res.ok) return null;
-//   return safeJson(res);
-// }
+// Fetch one student by ID
+export async function apiGetOne(id) {
+  const res = await fetch(`${API_URL}/${id}`);
+  if (!res.ok) return null;
+  return safeJson(res);
+}
 
-// // Create a new student
-// export function apiCreate(data) {
-//   return fetch(API_URL, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify(data)
-//   });
-// }
+// Create a new student
+export function apiCreate(data) {
+  return fetch(API_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  });
+}
 
 // // Update a student
 // export function apiUpdate(id, data) {

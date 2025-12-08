@@ -79,15 +79,15 @@ export async function loadStudents() {
 }
 
 
-// // Create a new student
-// export async function createNewStudent(data) {
-//   const res = await apiCreate(data);
-//   if (res.ok) {
-//     showAlert("Student added!");
-//     resetForm();
-//     loadStudents();
-//   }
-// }
+// Create a new student
+export async function createNewStudent(data) {
+  const res = await apiCreate(data);
+  if (res.ok) {
+    showAlert("Student added!");
+    resetForm();
+    loadStudents();
+  }
+}
 
 // // Load a student into the form for editing
 // export async function editStudent(id) {

@@ -1,10 +1,14 @@
+# Opens a connection to SQLite and returns it for DB operations
+
 import sqlite3
-DB_FILE ="student.db"
+
+DB_FILE = "students.db"
 
 def get_connection():
     conn = sqlite3.connect(DB_FILE)
     conn.row_factory = sqlite3.Row
-    return conn 
+    return conn
+
 def init_database():
     conn = get_connection()
     conn.execute("""

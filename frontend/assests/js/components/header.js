@@ -3,4 +3,4 @@
     <a href="/" data-link class="text-blue-600 hover:underline">Home</a>
     <a href="/students" data-link class="text-blue-600 hover:underline">Students</a>
   </nav>
-</header>    
+</header>

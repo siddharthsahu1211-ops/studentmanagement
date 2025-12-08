@@ -1,4 +1,3 @@
-
 // Main entrypoint for frontend
 // import { initStudentController } from "./controllers/studentController.js";
 import { router } from "./router/viewRouter.js";
