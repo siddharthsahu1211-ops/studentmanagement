@@ -4,11 +4,11 @@ import {
     // apiCreate, 
     // apiUpdate, 
     // apiDelete 
-} from "../services/studentService.js";
+} from "../services/studentservice.js";
 
-// import { showAlert } from "../components/Alert.js";
-import { renderStudentTable } from "../components/StudentTable.js";
-import { resetForm, fillForm } from "../components/StudentForm.js";
+// import { showAlert } from "../components/alert.js";
+import { renderStudentTable } from "../components/studenttable.js";
+import { resetForm, fillForm } from "../components/studentform.js";
 
 import { setState, getState } from "../state/store.js";
 import { $, createElement } from "../utils/dom.js";

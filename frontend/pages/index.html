@@ -50,12 +50,12 @@
 
     <!-- JS Modules -->
     <script type="module">
-        import { loadComponent } from "/frontend/assets/js/utils/loadComponent.js";
-        import { initRouterEvents, router } from "/frontend/assets/js/router/viewRouter.js";
+        import { loadComponent } from "/frontend/assets/js/utils/loadcomponents.js";
+        import { initRouterEvents, router } from "/frontend/assets/js/router/viewrouter.js";
 
         // Load header/footer templates
-        loadComponent("#header", "/frontend/assets/js/components/Header.html");
-        loadComponent("#footer", "/frontend/assets/js/components/Footer.html");
+        loadComponent("#header", "/frontend/assets/js/components/header.js");
+        loadComponent("#footer", "/frontend/assets/js/components/footer.js");
 
         initRouterEvents();
         router();
