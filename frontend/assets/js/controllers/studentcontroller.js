@@ -89,34 +89,35 @@ export async function createNewStudent(data) {
   }
 }
 
-// // Load a student into the form for editing
-// export async function editStudent(id) {
-//   const student = await apiGetOne(id);
+// Load a student into the form for editing
+export async function editStudent(id) {
+  const student = await apiGetOne(id);
 
-//   setState({ editingId: id });
-//   fillForm(student);
+  setState({ editingId: id });
+  fillForm(student);
 
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
-// // Update an existing student
-// export async function updateStudent(id, data) {
-//   const res = await apiUpdate(id, data);
-//   if (res.ok) {
-//     showAlert("Updated!");
-//     resetForm();
-//     setState({ editingId: null });
-//     loadStudents();
-//   }
-// }
+// Update an existing student
+export async function updateStudent(id, data) {
+  const res = await apiUpdate(id, data);
+  if (res.ok) {
+    showAlert("Updated!");
+    resetForm();
+    setState({ editingId: null });
+    loadStudents();
+  }
+}
 
 // // Delete a student
-// export async function deleteStudentAction(id) {
-//   if (!confirm("Delete this student?")) return;
+export async function deleteStudentAction(id) {
+  if (!confirm("Delete this student?")) return;
+}
 
 //   const res = await apiDelete(id);
 //  	if (res.ok) {
 //     showAlert("Deleted!");
 //     loadStudents();
 //   }
-// }
+// 
